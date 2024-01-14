@@ -1,0 +1,20 @@
+{
+    "name": "rest-api-project",
+    "version": "1.0.0",
+    "description": "Rest API project for CouchSurfing",
+    "author": "Luis Rocha <arrangoiz@gmail.com>",
+    "license": "MIT",
+    "main": "./api/server.js",
+    "scripts": {
+      "start": "node ./api/server.js",
+      "dev": "nodemon ./api/server.js"
+    },
+    "dependencies": {
+      "dotenv": "^16.3.1",
+      "express": "^4.18.2",
+      "mongoose": "^8.0.4"
+    },
+    "devDependencies": {
+        "nodemon": "^3.0.2"
+    }
+  }
