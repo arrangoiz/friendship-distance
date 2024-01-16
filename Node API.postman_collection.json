@@ -1,0 +1,234 @@
+{
+	"info": {
+		"_postman_id": "4041a8da-b04b-4992-8ad2-45885e303b07",
+		"name": "Node API",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "6283764"
+	},
+	"item": [
+		{
+			"name": "List Users",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/api/users/65a3281eea3be51cc56a3d30",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"users",
+						"65a3281eea3be51cc56a3d30"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Create new User",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "name",
+							"value": "Luis Rocha",
+							"type": "text"
+						},
+						{
+							"key": "email",
+							"value": "arrangoiz@gmail.com",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:3000/api/users",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"users"
+					],
+					"query": [
+						{
+							"key": "",
+							"value": "",
+							"disabled": true
+						},
+						{
+							"key": "",
+							"value": "",
+							"disabled": true
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Update User's Information",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "friends",
+							"value": "65a3281eea3be51cc56a3d33",
+							"type": "text",
+							"disabled": true
+						},
+						{
+							"key": "email",
+							"value": "donna.barnes@example.com.mx",
+							"type": "text",
+							"disabled": true
+						},
+						{
+							"key": "name",
+							"value": "Luis Rocha",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:3000/api/users/65a32833ea3be51cc56a3d3f",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"users",
+						"65a32833ea3be51cc56a3d3f"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Add/Delete a User's Friend",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "friendId",
+							"value": "65a3281eea3be51cc56a3d2a",
+							"type": "text"
+						},
+						{
+							"key": "email",
+							"value": "donna.barnes@example.com.mx",
+							"type": "text",
+							"disabled": true
+						},
+						{
+							"key": "name",
+							"value": "Luis Rocha Arrangoiz",
+							"type": "text",
+							"disabled": true
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:3000/api/users/65a3281eea3be51cc56a3d31/friend",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"users",
+						"65a3281eea3be51cc56a3d31",
+						"friend"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Delete a User",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/api/users/65a32691c3250ae869f1053b",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"users",
+						"65a32691c3250ae869f1053b"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get Relationship distance between two Users",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "friendId",
+							"value": "65a3281eea3be51cc56a3d30",
+							"type": "text"
+						},
+						{
+							"key": "email",
+							"value": "donna.barnes@example.com.mx",
+							"type": "text",
+							"disabled": true
+						},
+						{
+							"key": "name",
+							"value": "Luis Rocha Arrangoiz",
+							"type": "text",
+							"disabled": true
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:3000/api/users/65a3281eea3be51cc56a3d2a/degrees/65a3281eea3be51cc56a3d30",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"users",
+						"65a3281eea3be51cc56a3d2a",
+						"degrees",
+						"65a3281eea3be51cc56a3d30"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
