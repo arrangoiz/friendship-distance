@@ -8,7 +8,7 @@ docker-compose up -d
 ``` 
 - Wait until it finishes up downloading layers, building the images and starts running the containers.
 ## 2. Tech Stack
-- This oroject uses ExpressJS to handle HTTP requests and MongoDB to persist data.
+- This project uses ExpressJS to handle HTTP requests and MongoDB to persist data.
 ## 3. Usage
 - I'd suggest using Postman or any available API platform tool to start playing with it.
 - List of available endpoints:
